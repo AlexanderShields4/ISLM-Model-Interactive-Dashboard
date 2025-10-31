@@ -214,3 +214,29 @@ with colD:
     st.plotly_chart(fig_hf, use_container_width=True)
 
 st.markdown("---")
+
+st.subheader("Theoretical Basis and Explanation")
+st.markdown("---")
+st.write("In order to understand the intricacies of these graphs intuitively, we must define the equations and derivations definitively. " \
+"We start with the goods market Equilibrium condition; the essential equation for the Keynesian Cross. Y = C(Y-T) + I(r) + G" \
+"Where:\n Y: output / income \nC(Y-T): Consimption which depends positively on disposable income\n" 
+"I(r): investment, which depends negatively on the interest rate\n" \
+"G: government spending\n\n The vertical axis of the keynesian cross shows planned expenditure\n The " \
+"horizontal axis shows the income/output(Y)\n the 45 degree line represents the points where E = Y\n" \
+"The expenditure line shifts depending on the interest rate because I(r) affects the total expenditure" \
+"When the interest rate falls, investment increases and thus planned expenditure line shifts upwards and the equilibrium output Y rises" \
+"From this we trace out the IS curve by plotting each equilibrium Y that corresponds to a given r." \
+"Thus the IS curve is downward sloping in (r,Y) space\n\n" \
+"Now we explore the derivation of the LM curve. Start with the money market equilibrium condition in real terms: \n" \
+"M/P = L(r,Y)\n" \
+"where:\n M/P: real money supply\nL(r,Y): real money demand dependant on the interest rates and income\n" \
+"The money supply is vertical as it is fixed by the central bank.\n" \
+"The money demand curve is downward sloping because as interest rates fall, people want to hold more money.\n" \
+"Now we take each equilibrium we take the equilibrium interest rate that balances the money market and using these points we can plot the LM curve. " \
+"The LM curve slopes upwards because higher income increases the demand for money and with a fixed supply, the interest rate must also rise to restore equilibrium" \
+"\n\n Now we explore the effects of fiscal and monetary policy on the IS-LM. \n" \
+"Expansionary fiscal policy: This consists of an increase in G or a decrease in T.Results in a boost in aggregate demand, thus for any given interest rate, equilibrium output in the goods market is higher. Thus the IS curve shifts right. Contractionary fiscal policy does the opposite and shifts the IS curve to the left.\n" \
+"Monetary policy: Implemented through changes in the money supply (M) by the central bank. Expansionary policy increases M, and results that for any level of income, interest rates fall due to more liquidity. Thus the LM curve shifts to the right or downward. The oppositite is true for contrationary policy." \
+"\n\n Slope Sensitivity:\n Flat IS → Monetary policy very effective, Fiscal less effective.\nSteep IS → Fiscal policy more effective, Monetary less effective.\nFlat LM → Fiscal policy very effective (interest doesn’t rise much).\nSteep LM → Fiscal policy less effective (crowding out dominates)."
+
+)
