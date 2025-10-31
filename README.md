@@ -3,14 +3,14 @@ IS-LM Model Interactive Dashboard
 
 Overview
 --------
-This repository contains a small interactive dashboard (built with Streamlit) that demonstrates the Keynesian Cross, the Money Market, and the IS–LM model. The goal is educational: to let you change simple macroeconomic parameters (autonomous consumption, marginal propensity to consume, government spending, money supply, etc.) and immediately see how the equilibrium output and interest rate respond.
+This repository contains a small interactive dashboard (built with Streamlit) that demonstrates the Keynesian Cross, the Money Market, and the IS–LM model. The goal is educational: to let you change simple macroeconomic parameters and immediately see how the equilibrium output and interest rate respond.
 
 What you'll find
 ----------------
-- `ISLM.py` — the Streamlit app. Run it to launch an interactive dashboard with three panels:
+- `ISLM1.py` — the Streamlit app. Run it to launch an interactive dashboard with three panels:
   - Keynesian Cross (Planned Expenditure vs Output)
   - Money Market (Nominal money supply and interest rate)
-  - IS–LM Diagram (Interest rate r vs Output Y) with computed equilibrium point
+  - IS–LM Diagrams (Interest rate r vs Output Y) with computed equilibrium point
 
 Quick start
 -----------
@@ -30,7 +30,7 @@ pip install -r requirements.txt
 3. Run the app:
 
 ```bash
-streamlit run ISLM.py
+streamlit run ISLM1.py
 ```
 
 This will open a browser window (or show a local URL you can open) with the interactive dashboard.
@@ -63,7 +63,7 @@ Troubleshooting
 - If the app opens with an empty page or crashes, try running the Streamlit command from a terminal so you can see Python/Streamlit error output:
 
 ```bash
-streamlit run ISLM.py
+streamlit run ISLM1.py
 ```
 
 - If sliders appear to freeze or not update, make sure you have a modern Streamlit version (see `requirements.txt`) and that the app is not blocked by background errors printed to the terminal.
@@ -72,20 +72,15 @@ streamlit run ISLM.py
 
 Development notes
 -----------------
-- The code uses simple closed-form solutions for the Keynesian cross and IS–LM equilibrium where algebra permits. These are computed inside `ISLM.py` and plotted as markers.
+- The code uses simple closed-form solutions for the Keynesian cross and IS–LM equilibrium where algebra permits. These are computed inside `ISLM1.py` and plotted as markers.
 
 - The model is intentionally simple and deterministic for pedagogical purposes; it omits taxes, expectations, and other extensions.
 
-Contributing
-------------
-If you'd like to extend the dashboard, consider:
-- Adding tax policy (a proportional tax rate) and showing the multiplier effects.
-- Making investment an explicit function of r with a non-linear form.
-- Adding a short explanation panel that walks the viewer through how fiscal and monetary policy shift the curves.
+License
+-------
+This project is released under the MIT License. See the `LICENSE` file in the repository root for the full text.
 
-License & credits
------------------
-This project is provided as-is for educational use. If you include third-party code or packages, follow their licenses (most used packages here are permissively licensed). If you'd like, I can add a specific license file (MIT, Apache 2.0, etc.).
+Short summary: you may use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the copyright notice and this license notice are included in all copies or substantial portions of the Software. The software is provided "as is", without warranty of any kind.
 
 Contact
 -------
