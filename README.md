@@ -4,6 +4,7 @@ IS-LM Model Interactive Dashboard
 Overview
 --------
 This repository contains a small interactive dashboard (built with Streamlit) that demonstrates the Keynesian Cross, the Money Market, and the IS–LM model. The goal is educational: to let you change simple macroeconomic parameters and immediately see how the equilibrium output and interest rate respond.
+link: https://alexandershields4-islm-model-interactive-dashboard-islm1-abobt5.streamlit.app/
 
 What you'll find
 ----------------
